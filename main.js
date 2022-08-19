@@ -140,3 +140,57 @@ window.onscroll = function() {
   }
 
 }
+
+// create a popUp Image 
+
+let ourGallary = document.querySelectorAll('.gallary img') 
+
+ourGallary.forEach(img =>{
+  img.addEventListener('click', (e)=>{
+  // create overlay Element 
+  let overLay = document.createElement('div');
+  //add overlay Class Name
+    overLay.classList.add('popup-overlay');
+    // append overlay to body 
+    document.body.appendChild(overLay);
+    //create the PopUp 
+    let popupBox = document.createElement('div');
+      popupBox.classList.add('popup-box');
+      if (img.alt !== null) {
+        // create heading 
+        let imageHeading = document.createElement('h3');
+        // create text for heading 
+        let imgText = document.createTextNode(img.alt);
+        //append text to heading 
+        imageHeading.appendChild(imgText);
+        // append to popup-box
+        popupBox.appendChild(imageHeading);
+      }
+      //create-image
+      let popubImage = document.createElement('img');
+      //set image src
+      popubImage.src = img.src;
+      // add image to popub box 
+      popupBox.appendChild(popubImage);
+      // append box to body 
+      document.body.appendChild(popupBox);
+      // create the close span 
+      let closeBtn = document.createElement('span');
+      // Create the close button text 
+      let closeBtnText = document.createTextNode('X');
+      // Append  text to btn 
+      closeBtn.appendChild(closeBtnText);
+      closeBtn.className = 'close-btn';
+      //add to popup box
+      popupBox.appendChild(closeBtn);
+  })
+})
+
+//close popup 
+document.addEventListener('click',(e)=>{
+  if(e.target.className == 'close-btn'){
+  e.target.parentElement.remove();
+  // remove overLay' 
+  document.querySelector('.popup-overlay').remove();
+  }
+})
