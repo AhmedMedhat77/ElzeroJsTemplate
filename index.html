@@ -36,9 +36,46 @@
           <span class="no" data-background="no">No</span>
         </div>
       </div>
+      <div class="option-box">
+        <h4>Show Bullets</h4>
+        <div class="bullets-option">
+          <span class="yes active" data-display='show'>Yes</span>
+          <span class="no" data-display="hide">No</span>
+        </div>
+      </div>
+      <button class="reset">Reset</button>
     </div>
   </div>
   <!-- end settings Box -->
+  <!-- stat Naviagtion bullets -->
+  <div class="nav-bullets">
+    <div class="bullet" data-section=".about-us">
+      <div class="tooltip">
+        About us
+      </div>
+    </div>
+    <div class="bullet" data-section=".skills">
+      <div class="tooltip">
+        Our Skills
+      </div>
+    </div>
+    <div class="bullet" data-section=".gallary">
+      <div class="tooltip">
+        Gallary
+      </div>
+    </div>
+    <div class="bullet" data-section=".timeline">
+      <div class="tooltip">
+        Time Line
+      </div>
+    </div>
+    <div class="bullet" data-section=".testemonial">
+      <div class="tooltip">
+        Testemonials
+      </div>
+    </div>
+  </div>
+  <!-- end of navigation bullets -->
   <!-- start Landing Page -->
   <div class="landing-page">
     <div class="overlay"></div>
@@ -47,20 +84,31 @@
         <div class="logo">
           Spechial Design
         </div>
-        <ul class="links">
-          <li>
-            <a class="active" href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Products</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a data-section=".about-us" class="active" href="#">About</a>
+            </li>
+            <li>
+              <a data-section=".skills" href="#">Skills</a>
+            </li>
+            <li>
+              <a data-section=".gallary" href="#">Gallary</a>
+            </li>
+            <li>
+            <li>
+              <a data-section=".timeline" href="#">Time line</a>
+            </li>
+            <li>
+              <a data-section=".testemonial" href="#">Testemonials</a>
+            </li>
+          </ul>
+          <button class='toggle-menu'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -167,34 +215,137 @@
         <div class="year">
           2021
         </div>
-          <div class="left">
-            <div class="content">
-              <h3>Test Heading</h3>
-              <p>
-                s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
-            </div>
+        <div class="left">
+          <div class="content">
+            <h3>Test Heading</h3>
+            <p>
+              s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
           </div>
-          <div class="clearfix"></div>
-            <div class="left">
-              <div class="content">
-                <h3>Test Heading</h3>
-                <p>
-                  s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-             <div class="right">
-               <div class="content">
-                 <h3>Test Heading</h3>
-                 <p>
-                   s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
-               </div>
-             </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="left">
+          <div class="content">
+            <h3>Test Heading</h3>
+            <p>
+              s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="right">
+          <div class="content">
+            <h3>Test Heading</h3>
+            <p>
+              s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <!-- End time line -->
-  <script src="main.js"></script>
+  <!-- our Features -->
+  <div class="features">
+    <h2>Featuers</h2>
+    <div class="container">
+      <div class="feat-box">
+        <img src="./image/10.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="feat-box">
+        <img src="./image/8.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="feat-box">
+        <img src="./image/8.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="feat-box">
+        <img src="./image/7.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="feat-box">
+        <img src="./image/6.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="feat-box">
+        <img src="./image/10.jpeg" alt="" />
+        <h4>Development</h4>
+        <p>We are Professional Markteers , we will do any thing you imagine in no time </p>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- end of out features -->
+    <!-- start of Testemoan Section -->
+    <div class="testemonial">
+      <div class="container">
+        <h2>Testemonials</h2>
+        <div class="ts-box">
+          <p>
+            iam very happy with the Product it's very amazing experiance to deal with This Company and using their products
+          </p>
+          <div class="person-info">
+            <img src="./image/10.jpeg" alt="" />
+            <h4>Ahmed Medhat</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            iam very happy with the Product it's very amazing experiance to deal with This Company and using their products
+          </p>
+          <div class="person-info">
+            <img src="./image/8.jpeg" alt="" />
+            <h4>Asmaa Mandour</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+        <div class="ts-box">
+          <p>
+            iam very happy with the Product it's very amazing experiance to deal with This Company and using their products
+          </p>
+          <div class="person-info">
+            <img src="./image/6.jpeg" alt="" />
+            <h4>Ziad Yasser</h4>
+            <p>CEO At Company</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- End of testemonal Section -->
+    <!-- start Contact Us section -->
+    <div class="contact">
+      <div class="overlay">
+      </div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <div class="left">
+            <input type="text" name="name" placeholder="Enter Your Name" />
+            <input type="text" name="phone" placeholder="Enter Your Number" />
+            <input type="email" name="mail" placeholder="Enter Your Email" />
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end of contact us Section -->
+    <!-- start footer --> 
+    <footer class="footer">
+      <div class="container">
+        <h2>        Thaks to Osama Elzero <3 </h2>
+      </div>
+    </footer>
+    <!-- end of Footer -->
+    <script src="main.js"></script>
 </body>
 
 </html>
